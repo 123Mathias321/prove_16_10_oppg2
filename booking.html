@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Booking" >
+    <title>Booking</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-items"><a href="#"><h2>        Hjem</h2></a></div>
+        <div class="nav-items"><a href="#"><h2>       Booking</h2></a></div>
+        <div class="nav-items"><a href="#"><h2>        Meny</h2></a></div>
+        <div class="nav-items"><a href="#"><h2>      Historie</h2></a></div>
+    </nav>
+    <br><br><br><br><br>
+
+    <h1> her kan du bestille reservasjon</h1>
+    <input type="date" name="dato" id="dato"><br> <br>
+    <input type="time" name="tidspunkt" id="tidspunkt"> <br>
+    <h1>hvor mange skal være med?</h1> <br>
+    <input type="range"><br><br>
+    <input type="submit" name="ferdig" id="submit">
+
+
+</body>
+<style>
+    .nav{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: 5vh;
+        background-color: azure;
+        justify-content: space-evenly;
+        
+    }
+    .nav-items{
+        border: 1px solid black;
+        width: 24vw;
+        height: 10vh;
+
+    }
+    .nav-items:hover{
+        width: 30vw;
+        height: 20vh;
+        transition: 1s;
+    }
+    h2{
+        padding-left: 7vw;
+    }
+</style>
+</html>

@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Booking" >
+    <title>Booking</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-items"><a href="#"><h2>        Hjem</h2></a></div>
+        <div class="nav-items"><a href="#"><h2>       Booking</h2></a></div>
+        <div class="nav-items"><a href="#"><h2>        Meny</h2></a></div>
+        <div class="nav-items"><a href="#"><h2>      Historie</h2></a></div>
+    </nav>
+    <br><br><br><br><br>
+
+    <h1> Her er vår meny:</h1> <br><br><br>
+
+    <table>
+        <tr>
+            <th>Matrett</th>
+            <th>Pris</th>
+
+        </tr>
+        <tr>
+            <td>pizza</td>
+            <td>5678 kr</td>
+        </tr>
+        <tr>
+            <td>pizza</td>
+            <td>5678 kr</td>
+        </tr>
+        <tr>
+            <td>pizza</td>
+            <td>5678 kr</td>
+        </tr>
+        <tr>
+            <td>pizza</td>
+            <td>5678 kr</td>
+        </tr>
+        <tr>
+            <td>pizza</td>
+            <td>5678 kr</td>
+        </tr>
+
+    </table>
+    
+</body>
+<style>
+    table{
+        background-color: beige;
+        width: 30vw;
+        height: auto;
+    }
+    .nav{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: 5vh;
+        background-color: azure;
+        justify-content: space-evenly;
+        
+    }
+    .nav-items{
+        border: 1px solid black;
+        width: 24vw;
+        height: 10vh;
+
+    }
+    .nav-items:hover{
+        width: 30vw;
+        height: 20vh;
+        transition: 1s;
+    }
+    h2{
+        padding-left: 7vw;
+    }
+</style>
+
+</html>

@@ -1,0 +1,112 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Hotell" >
+    <title>Hotell</title>
+</head>
+<body>
+
+    <nav class="nav">
+        <div class="nav-items"><a href="#"><h2>        Hjem</h2></a></div>
+        <div class="nav-items"><a href="#"><h2>       Booking</h2></a></div>
+        <div class="nav-items"><a href="#"><h2>        Meny</h2></a></div>
+        <div class="nav-items"><a href="#"><h2>      Historie</h2></a></div>
+    </nav>
+    <br><br><br><br><br>
+    <main class="grid">
+        <div class="lang1"></div>
+        <div class="stor"><img src="stor.jpg" alt="Resturant" ></div>
+        <div class="lang2"></div>
+        <div class="hvit1"></div>
+        <div class="medium"><img src="medium.jpg" alt="te" ></div>   
+        <div class="liten"><img src="liten.jpg" alt="bestikk" ></div>
+        <div class="hvit2"></div>
+    </main>
+    <br><br><br><br>
+    <footer>
+        <div class="sidelengs"> <h1> Velkommen til oss ved Mailand Resturant!</h1></div>
+        <div class="kontakt"> <h2> Kontakt oss : 56789876, bildene ville ikke være riktig størelse, så hele designet ble litt drit</h2></div>
+    </footer>
+</body>
+<style>
+    img{
+        max-width: fit-content;
+        max-height: fit-content;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto auto;
+        grid-template-rows: auto auto auto auto auto auto auto;
+        justify-content: space-evenly;
+        width: 95vw;
+        height: 40vh;
+        column-gap: 0vw;
+        row-gap: 0vh;
+
+    }
+    .lang1 {
+        grid-row: 1/5;
+        grid-column: 1/2;
+    }
+    .lang2{
+        grid-row: 1/5;
+        grid-column: 6/7;
+    }
+    .stor{
+        
+        grid-row: 1/5;
+        grid-column: 2/6;
+    }
+    .hvit1{
+        grid-row: 5/7;
+        grid-column: 1/2; 
+    }
+    .hvit1{
+        grid-row: 5/7;
+        grid-column: 6/7; 
+    }
+    .medium{
+        
+        grid-row: 5/7;
+        grid-column: 2/4; 
+    }
+    .liten{
+        
+        grid-row: 5/7;
+        grid-column: 4/6; 
+    }
+    .sidelengs{
+        border: 1px solid black;
+        grid-row: 7/9;
+        grid-column: 1/7; 
+    }
+    .kontakt{
+        border: 1px solid black;
+        grid-row: 9/10;
+        grid-column: 1/7; 
+    }
+    .nav{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: 5vh;
+        background-color: azure;
+        justify-content: space-evenly;
+        
+    }
+    .nav-items{
+        border: 1px solid black;
+        width: 24vw;
+        height: 10vh;
+
+    }
+    .nav-items:hover{
+        width: 30vw;
+        height: 20vh;
+        transition: 1s;
+    }
+    h2{
+        padding-left: 7vw;
+    }
+
+</style>
+</html>
